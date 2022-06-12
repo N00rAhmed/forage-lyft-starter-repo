@@ -7,4 +7,8 @@ class Car(ABC):
 
     @abstractmethod
     def needs_service(self):
-        pass
+        if (self.last_service_date >= self):
+            return True
+        else:
+            return False
+
